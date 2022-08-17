@@ -1,7 +1,7 @@
 apiVersion: v2
 name: meshery-perf
 description: Meshery-perf chart.
-source: 
+source:
   - https://github.com/layer5io/meshery-perf
 
 deprecated: true

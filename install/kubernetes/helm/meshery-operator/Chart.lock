@@ -1,5 +1,6 @@
 dependencies:
 - name: meshery-broker
+<<<<<<< HEAD
   repository: ""
   version: 0.5.0
 - name: meshery-meshsync
@@ -7,3 +8,12 @@ dependencies:
   version: 0.5.0
 digest: sha256:4c27c65b00d28c31f222b1a0a6ceb23341ca1626122e33d5603fb64b68529630
 generated: "2022-08-27T17:59:12.64039172+01:00"
+=======
+  repository: file://../meshery/charts/meshery-broker
+  version: 0.5.0
+- name: meshery-meshsync
+  repository: file://../meshery/charts/meshery-meshsync
+  version: 0.5.0
+digest: sha256:7febabdc2f2a1ba9f50cbae8812fb638cc06b11b5eae623a95ab09933922beec
+generated: "2022-08-17T08:54:21.271170272Z"
+>>>>>>> [Helm] Consolidate Helm chart sets

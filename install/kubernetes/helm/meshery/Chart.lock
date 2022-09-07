@@ -38,5 +38,5 @@ dependencies:
 - name: meshery-perf
   repository: ""
   version: 0.5.0
-digest: sha256:5dd22bd1c6bf9456f56608c8aec8e5f3c50807cfbab271c46145955197b84fbe
-generated: "2022-08-29T13:42:07.719694672+01:00"
+digest: sha256:f5ecc084cf7f2bc8de470a995bcad133df21d1f591b6e159d54d66d25934c9d7
+generated: "2022-09-07T11:06:46.596127864+01:00"

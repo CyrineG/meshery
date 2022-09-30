@@ -71,9 +71,9 @@ dependencies:
   - name: meshery-app-mesh
     version: 0.5.0
     condition: meshery-app-mesh.enabled
-  # - name: meshery-cilium
-  #   version: 0.5.0
-  #   condition: meshery-cilium.enabled
+  - name: meshery-cilium
+    version: 0.5.0
+    condition: meshery-cilium.enabled
   # - name: meshery-perf
   #   version: 0.5.0
   #   condition: meshery-perf.enabled

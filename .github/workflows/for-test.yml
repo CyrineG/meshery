@@ -1,0 +1,30 @@
+name: Release Charts
+on:
+  push:
+    branches:
+      - 'test_app_version'
+    tags:
+      - 'v*'
+    paths:
+      - 'install/kubernetes/**'
+  workflow_dispatch:
+    inputs:
+      logLevel:
+        description: 'Log level'
+        required: true
+        default: 'warning'
+      release-ver:
+          description: 'Release Version'     
+          required: false
+          default: 'v'
+jobs:
+  release-chart:
+    runs-on: ubuntu-latest
+    if: ${{ github.event_name != 'pull_request' }} && ${{ github.ref == 'refs/heads/master' }}
+    steps:
+      - uses: actions/checkout@v3
+      - name: set env
+        id: vars
+        # https://github.community/t/how-to-get-just-the-tag-name/16241/7
+        run: echo ${{ github.ref_name }} ${GITHUB_REF/refs\/tags\//}
+

@@ -17,4 +17,4 @@ jobs:
         id: vars
         run: echo ::set-output name=tag::${{ github.ref_name }}
       - name: Publish Helm chart for release version
-        run: echo steps.vars.outputs.tag
+        run: echo ${{ steps.vars.outputs.tag }}

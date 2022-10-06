@@ -22,9 +22,5 @@ jobs:
         with:
           token: ${{ secrets.Cyrine_GH_ACCESS_TOKEN }}
           charts_dir: install/kubernetes/helm
-          owner: meshery
-          repository: cyrineg.github.io
-          branch: test_app_version
-          commit_username: cyrineG
           chart_version: ${{ steps.vars.outputs.tag }}
           app_version: ${{ steps.vars.outputs.tag }}

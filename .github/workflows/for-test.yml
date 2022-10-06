@@ -23,5 +23,6 @@ jobs:
           token: ${{ secrets.Cyrine_GH_ACCESS_TOKEN }}
           charts_dir: install/kubernetes/helm
           charts_url: http://cyrineg.github.io
+          branch: test_app_version
           chart_version: ${{ steps.vars.outputs.tag }}
           app_version: ${{ steps.vars.outputs.tag }}
